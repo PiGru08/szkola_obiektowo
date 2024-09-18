@@ -16,7 +16,11 @@ public class Uczen extends Osoba {
     @Override
     public String toString() {
         return "Uczen{" +
-                "Imię: " + getImie() +", Nazwisko: "+ getNazwisko() +", nr_ewidencyjny: "+ nr_ewidencyjny+
+                "Imię: " + getImie() +
+                ", Nazwisko: "+
+                getNazwisko() +
+                ", nr_ewidencyjny: "+
+                nr_ewidencyjny+
                 '}';
     }
 
