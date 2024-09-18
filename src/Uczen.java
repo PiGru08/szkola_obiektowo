@@ -1,4 +1,4 @@
-public class Uczen extends Osoba {
+public  class Uczen extends Osoba implements Dyzurny {
     //ponieważ uczeń ma te same własności co osoba to będzie klasą potomną klasy osoba
     //klasa Osoba będzie klasą bazową
 
@@ -32,4 +32,8 @@ public class Uczen extends Osoba {
     }
 
 
+    @Override //nadpisuje metode z interfejsu Dyzurny
+    public void wykonajDyzur() {
+        System.out.println("Zmazuję tablicę");
+    }
 }

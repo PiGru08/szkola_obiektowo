@@ -1,4 +1,5 @@
-public sealed class Nauczyciel extends Osoba permits Wychowawca{
+public sealed class Nauczyciel extends Osoba implements Dyzurny permits Wychowawca{
+
     //seald ograniczenie dziedziczenia
     //permits jaka klasa może dziedziczyć
     private String przedmiot;
@@ -24,4 +25,8 @@ public sealed class Nauczyciel extends Osoba permits Wychowawca{
                 '}';
     }
 
+    @Override
+    public void wykonajDyzur() {
+
+    }
 }
