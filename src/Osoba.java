@@ -15,10 +15,24 @@ public class Osoba {
         this.nazwisko = nazwisko;
         this.wiek = wiek;
     }
+
+    public Osoba() {
+        imie = "";
+        nazwisko = "";
+        wiek = 0;
+    }
+
     //metody dostępowe
     //gettery i settery
     public String getImie() {
         return imie;
+    }
+    //przeciążenie konstruktora
+
+    public Osoba(String imie, String nazwisko) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        wiek = 7; // jeżeli nie ma lokalnie zmiennej wiek to jest to pole klasy
     }
 
     public void setImie(String imie) {
